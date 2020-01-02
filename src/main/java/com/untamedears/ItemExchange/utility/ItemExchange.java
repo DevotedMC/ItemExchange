@@ -322,7 +322,14 @@ public class ItemExchange {
 				// Otherwise check if block is a button, if not then skip
 				Block bb_block = sc_buttonhost.getRelative(hostface);
 				Material bb_material = bb_block.getType();
-				if (!(bb_material == Material.STONE_BUTTON || bb_material == Material.WOOD_BUTTON)) continue;
+				if (!(bb_material == Material.STONE_BUTTON || 
+						bb_material == Material.OAK_BUTTON ||
+						bb_material == Material.SPRUCE_BUTTON ||
+						bb_material == Material.ACACIA_BUTTON ||
+						bb_material == Material.BIRCH_BUTTON ||
+						bb_material == Material.DARK_OAK_BUTTON ||
+						bb_material == Material.JUNGLE_BUTTON
+					)) continue;
 				// Check if the button is attached to the face, otherwise skip
 				BlockFace bb_facing = BlockUtility.getAttachedDirection(bb_block);
 				if (!(bb_facing == hostface)) continue;

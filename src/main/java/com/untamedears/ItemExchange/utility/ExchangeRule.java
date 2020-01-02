@@ -49,7 +49,7 @@ import com.untamedears.ItemExchange.metadata.PotionMetadata;
  * @author Brian Landry
  */
 public class ExchangeRule {
-	private static final List<Material> NOT_SUPPORTED = Arrays.asList(Material.MAP, Material.WRITTEN_BOOK, Material.ENCHANTED_BOOK, Material.FIREWORK, Material.FIREWORK_CHARGE);
+	private static final List<Material> NOT_SUPPORTED = Arrays.asList(Material.MAP, Material.FILLED_MAP, Material.WRITTEN_BOOK, Material.ENCHANTED_BOOK, Material.FIREWORK_ROCKET, Material.FIREWORK_STAR);
 	
 	public static final String hiddenRuleSpacer = "§&§&§&§&§r";
 	public static final String hiddenCategorySpacer = "§&§&§&§r";
